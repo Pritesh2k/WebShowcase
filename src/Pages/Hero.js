@@ -2,6 +2,9 @@ import React from 'react'
 
 import './CSS/hero.css'
 
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 function Hero() {
     return (
         <div className='hero-container'>
@@ -18,6 +21,10 @@ function Hero() {
                 <div className='scroll-down'>
                     <text>Scroll Down</text>
                 </div>
+            </div>
+            <div className='hero-links'>
+                <LinkedInIcon fontSize='large'/>
+                <GitHubIcon fontSize='large'/>
             </div>
         </div>
     )

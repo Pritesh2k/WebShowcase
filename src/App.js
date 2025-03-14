@@ -1,9 +1,9 @@
 // src/App.js
 import { useEffect } from "react";
 import "./App.css";
-import CardStack from "./Components/CardStack";
 import Hero from "./Pages/Hero";
 import Navbar from "./Components/Navbar";
+import Portfolioshowcase from "./Pages/Portfolioshowcase";
 
 function App() {
   const smoothScrollTo = (targetId) => {
@@ -34,26 +34,6 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   const sections = document.querySelectorAll(".section");
-
-  //   const observer = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const sectionId = entry.target.id;
-  //           window.history.pushState(null, null, `#${sectionId}`);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.4 } // Trigger when 50% of the section is visible
-  //   );
-
-  //   sections.forEach((section) => observer.observe(section));
-
-  //   return () => observer.disconnect(); // Cleanup observer on unmount
-  // }, []);
-
   return (
     <div className="App">
       <Navbar/>
@@ -61,7 +41,7 @@ function App() {
         <Hero />
       </section>
       <section id="section-2" className="section">
-        <CardStack />
+        <Portfolioshowcase/>
       </section>
       <section id="section-3" className="section">
         Section 3

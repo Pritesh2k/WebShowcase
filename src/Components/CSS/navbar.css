@@ -27,7 +27,7 @@
   
   /* Hover effect for a more interactive feel */
   .nav-container:hover {
-    background-color: rgba(59, 59, 59, 0.3); /* Slightly darker on hover */
+    background-color: rgba(59, 59, 59, 0.589); /* Slightly darker on hover */
     backdrop-filter: blur(20px); /* Increase blur on hover */
     -webkit-backdrop-filter: blur(20px);
   }
