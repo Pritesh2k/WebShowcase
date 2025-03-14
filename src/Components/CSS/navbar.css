@@ -1,0 +1,64 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  
+    position: fixed; /* Make navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  
+    padding: 0 2rem;
+    width: 100%;
+    height: 10vh;
+  
+    /* Frosted glass effect */
+    background-color: rgba(59, 59, 59, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(15px); /* Increased blur for a smoother effect */
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+  
+    /* Border for subtle separation */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+    /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+  /* Hover effect for a more interactive feel */
+  .nav-container:hover {
+    background-color: rgba(59, 59, 59, 0.3); /* Slightly darker on hover */
+    backdrop-filter: blur(20px); /* Increase blur on hover */
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  /* Logo styling */
+  .nav-container .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Navbar links container */
+  .nav-container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem; /* Increased gap for better spacing */
+    margin: 0;
+    padding: 0.5rem;
+    height: 5dvh;
+  }
+  
+  /* Navbar links */
+  .nav-container ul li a {
+    color: white; /* Light text color for contrast */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+  }

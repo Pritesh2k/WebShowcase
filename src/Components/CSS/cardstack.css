@@ -1,0 +1,22 @@
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    height: 95%;
+
+    color: black;
+    background-color: white;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 40%;
+
+    background-color: aqua;
+}
